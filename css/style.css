@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: burlywood;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(79, 14, 14);
+    border: 1px solid burlywood;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("../assets/temple.jpg");
+    background-size: contain;
+    overflow-x: hidden;
+}
+:root{
+    --font1: 'Rowdies', sans-serif;
+    --font2: 'Josefin Sans', sans-serif;
+}
+.main-container{
+    width: 100%;
+}
+.main-container .site-top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: burlywood;
+    font-family: var(--font1);
+    padding: 1rem;
+    z-index: 2;
+}
+#menu{
+    cursor: pointer;
+}
+
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.svg-container svg{
+    cursor: pointer;
+}
+#navbar .list{
+    list-style: none;
+}
+#navbar .list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 6rem;
+    font-family: var(--font1);
+    transition: all 0.5s;
+}
+#navbar .list li a:hover{
+    letter-spacing: 10px;
+}
+
+#home{
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+#home h1{
+    font-family: var(--font1);
+    font-size: 1500%;
+}
+#home .text{
+    width: 100%;
+    font-family: var(--font2);
+    text-align: start;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#home .text p{
+    grid-column-start: 2;
+    width: 90%;
+    padding: 0 1rem;
+    border-left: 2px solid burlywood;
+    line-height: 25px;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+#nom{
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+    width: 100%;
+    background-color: rgb(88, 26, 26);
+    overflow: hidden;
+}
+#nom .head{
+    position: relative;
+    color: burlywood;
+    font-size: 3rem;
+    font-family: var(--font1);
+    width: 100vw;
+    text-align: center;
+}
+#nom .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: burlywood;
+    font-family: var(--font2);
+    width: 100%;
+}
+#nom .content p{
+    width: 100%;
+    line-height: 25px;
+    text-align: justify;
+    padding: 1rem;
+}
+#nom .content p span{
+    font-size: 4rem;
+    color: rgb(142, 106, 59);
+}
+
+#history{
+    color: burlywood;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    overflow: hidden;
+}
+#history .head{
+    width: 100%;
+    text-align: center;
+    grid-column-start: 2;
+    background-color: rgb(79, 14, 14);
+}
+
+#history .head .title{
+    font-size: 6rem;
+    font-family: var(--font1);
+}
+#history .text{
+    grid-column-start: 2;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height: 25px;
+    font-family: var(--font2);
+    background-color: rgb(79, 14, 14);
+    padding: 2rem 0;
+}
+
+#history div p{
+    width: 90%;
+    text-align: justify;
+    line-height: 30px;
+}
+#history div .list{
+    list-style: none;
+    width: 80%;
+}
+
+#influence{
+    overflow: hidden;
+    background-color: burlywood;
+    color: rgb(79, 14, 14);
+    font-family: var(--font2);
+    padding: 2rem 0;
+    line-height: 25px;
+}
+#influence .head{
+    text-align: left;
+    font-size: 4rem;
+    font-family: var(--font1);
+    padding: 0.5rem 2rem;
+}
+
+#influence .para{
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    line-height: 25px;
+}
+#influence .para p{
+    width: 50%;
+    padding: 2rem;
+}
+
+#influence .points{
+    width: 80%;
+    margin: auto;
+}
+
+#influence .points h1{
+    font-family: var(--font1);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#influence .points p{
+    padding: 0.5rem;
+    text-align: justify;
+    width: 50%;
+}
+
+#writing{
+    overflow: hidden;
+    font-family: var(--font2);
+    background-color: burlywood;
+    color: rgb(79, 14, 14);
+}
+
+#writing .head{
+    text-align: right;
+    font-size: 4rem;
+    font-family: var(--font1);
+    padding: 0.5rem 2rem;
+}
+
+#writing .para{
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 25px;
+}
+#writing .para p{
+    width: 50%;
+    padding: 2rem;
+}
+#writing .points{
+    width: 80%;
+    margin: auto;
+}
+
+#writing .points h1{
+    font-family: var(--font1);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#writing .points p{
+    padding: 0.5rem;
+    text-align: justify;
+    width: 50%;
+    line-height: 25px;
+}
+
+#mod-era{
+    overflow: hidden;
+    font-family: var(--font2);
+    background-color: rgb(79, 14, 14);
+    color: burlywood;
+}
+
+#mod-era .head{
+    text-align: right;
+    font-size: 4rem;
+    font-family: var(--font1);
+    padding: 0.5rem 2rem;
+}
+
+#mod-era .para{
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 25px;
+}
+#mod-era .para p{
+    width: 50%;
+    padding: 2rem;
+}
+#mod-era .points{
+    width: 80%;
+    margin: auto;
+}
+
+#mod-era .points h1{
+    font-family: var(--font1);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#mod-era .points p{
+    padding: 0.5rem;
+    text-align: justify;
+    width: 50%;
+    line-height: 25px;
+}
+
+footer{
+    padding: 2rem;
+    background-color: burlywood;
+    color: rgb(79, 14, 14);
+    text-align: center;
+    font-family: var(--font2);
+}
