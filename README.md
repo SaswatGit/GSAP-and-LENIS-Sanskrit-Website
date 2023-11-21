@@ -1,1 +1,1 @@
-# GSAP-and-Locomotive-Sanskrit-Website
+# GSAP-and-LENIS-Sanskrit-Website
