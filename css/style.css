@@ -20,7 +20,8 @@ html{
 }
 body{
     background-image: url("../assets/temple.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -56,6 +57,7 @@ body{
     font-family: var(--font1);
     padding: 1rem;
     z-index: 2;
+    font-size: 2vw;
 }
 #menu{
     cursor: pointer;
@@ -182,6 +184,11 @@ body{
     font-size: 4rem;
     color: rgb(142, 106, 59);
 }
+@media screen and (max-width: 1000px) {
+    #nom .content p{
+        width: 100%;
+    }
+}
 
 #history{
     color: burlywood;
@@ -302,10 +309,10 @@ body{
         display: none;
     }
     #influence .para p{
-        width: 90%;
+        width: 100%;
     }
     #influence .points p{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -356,10 +363,10 @@ body{
         text-align: center;
     }
     #writing .para p{
-        width: 90%;
+        width: 100%;
     }
     #writing .points p{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -411,10 +418,10 @@ body{
         text-align: center;
     }
     #mod-era .para p{
-        width: 90%;
+        width: 100%;
     }
     #mod-era .points p{
-        width: 90%;
+        width: 100%;
     }
 }
 
