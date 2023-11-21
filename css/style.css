@@ -21,17 +21,32 @@ html{
 body{
     background-image: url("../assets/temple.jpg");
     background-size: contain;
+    background-attachment: fixed;
     overflow-x: hidden;
+}
+.cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    z-index:99;
+}
+.cursor img{
+    transform: rotateZ(-30deg);
 }
 :root{
     --font1: 'Rowdies', sans-serif;
     --font2: 'Josefin Sans', sans-serif;
 }
+
 .main-container{
     width: 100%;
 }
 .main-container .site-top{
-    position: absolute;
+    background-color: transparent;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -44,10 +59,11 @@ body{
 }
 #menu{
     cursor: pointer;
+    width: 83px;
 }
 
 #navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -68,7 +84,7 @@ body{
 #navbar .list li a{
     color: white;
     text-decoration: none;
-    font-size: 6rem;
+    font-size: 6vw;
     font-family: var(--font1);
     transition: all 0.5s;
 }
@@ -87,7 +103,7 @@ body{
 }
 #home h1{
     font-family: var(--font1);
-    font-size: 1500%;
+    font-size: 17vw;
 }
 #home .text{
     width: 100%;
@@ -106,9 +122,19 @@ body{
     text-align: justify;
 }
 
+@media screen and (max-width: 1000px) {
+    #home .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 #nom{
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     padding: 2rem 0rem;
     width: 100%;
     background-color: rgb(88, 26, 26);
@@ -116,11 +142,24 @@ body{
 }
 #nom .head{
     position: relative;
-    color: burlywood;
-    font-size: 3rem;
+    background-color: burlywood;
+    color: rgb(88, 26, 26);
+    font-size: 6vw;
     font-family: var(--font1);
-    width: 100vw;
+    width: 200vw;
     text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nom .head:nth-child(1){
+    transform: translateX(-20%) rotateZ(2deg);
+}
+#nom .head:nth-child(2){
+    transform: rotateZ(-2deg);
+    transform-origin:left;
+    border: 2px solid rgb(88, 26, 26);
 }
 #nom .content{
     display: flex;
@@ -131,9 +170,10 @@ body{
     color: burlywood;
     font-family: var(--font2);
     width: 100%;
+    padding: 2rem 0.5rem;
 }
 #nom .content p{
-    width: 100%;
+    width: 70%;
     line-height: 25px;
     text-align: justify;
     padding: 1rem;
@@ -151,15 +191,24 @@ body{
     width: 100%;
     overflow: hidden;
 }
+@media screen and (max-width: 1000px) {
+    #history{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 #history .head{
     width: 100%;
     text-align: center;
     grid-column-start: 2;
-    background-color: rgb(79, 14, 14);
+    background-color: burlywood;
+    color: rgb(79, 14, 14);
 }
 
 #history .head .title{
-    font-size: 6rem;
+    font-size: 7vw;
     font-family: var(--font1);
 }
 #history .text{
@@ -184,7 +233,7 @@ body{
 }
 #history div .list{
     list-style: none;
-    width: 80%;
+    width: 90%;
 }
 
 #influence{
@@ -194,12 +243,28 @@ body{
     font-family: var(--font2);
     padding: 2rem 0;
     line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #influence .head{
-    text-align: left;
-    font-size: 4rem;
+    width: 100%;
+    font-size: 6vw;
     font-family: var(--font1);
-    padding: 0.5rem 2rem;
+    padding: 3rem 2rem;
+    background-color: rgb(79, 14, 14);
+    color: burlywood;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#influence .head h1:nth-child(1){
+    transform: translateY(-700%);
+}
+#influence .head h1:nth-child(2){
+    transform: translateY(700%);
 }
 
 #influence .para{
@@ -207,8 +272,8 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
-    line-height: 25px;
+    justify-content: center;
+    line-height: 20px;
 }
 #influence .para p{
     width: 50%;
@@ -218,6 +283,7 @@ body{
 #influence .points{
     width: 80%;
     margin: auto;
+    text-align: left;
 }
 
 #influence .points h1{
@@ -228,7 +294,19 @@ body{
 #influence .points p{
     padding: 0.5rem;
     text-align: justify;
-    width: 50%;
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px){
+    #influence .head h1:nth-child(2){
+        display: none;
+    }
+    #influence .para p{
+        width: 90%;
+    }
+    #influence .points p{
+        width: 90%;
+    }
 }
 
 #writing{
@@ -240,7 +318,7 @@ body{
 
 #writing .head{
     text-align: right;
-    font-size: 4rem;
+    font-size: 6vw;
     font-family: var(--font1);
     padding: 0.5rem 2rem;
 }
@@ -250,7 +328,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     line-height: 25px;
 }
 #writing .para p{
@@ -273,6 +351,18 @@ body{
     width: 50%;
     line-height: 25px;
 }
+@media screen and (max-width: 1000px) {
+    #writing .head{
+        text-align: center;
+    }
+    #writing .para p{
+        width: 90%;
+    }
+    #writing .points p{
+        width: 90%;
+    }
+}
+
 
 #mod-era{
     overflow: hidden;
@@ -283,7 +373,7 @@ body{
 
 #mod-era .head{
     text-align: right;
-    font-size: 4rem;
+    font-size: 6vw;
     font-family: var(--font1);
     padding: 0.5rem 2rem;
 }
@@ -293,7 +383,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     line-height: 25px;
 }
 #mod-era .para p{
@@ -316,6 +406,17 @@ body{
     width: 50%;
     line-height: 25px;
 }
+@media screen and (max-width: 1000px) {
+    #mod-era .head{
+        text-align: center;
+    }
+    #mod-era .para p{
+        width: 90%;
+    }
+    #mod-era .points p{
+        width: 90%;
+    }
+}
 
 footer{
     padding: 2rem;
@@ -324,3 +425,4 @@ footer{
     text-align: center;
     font-family: var(--font2);
 }
+

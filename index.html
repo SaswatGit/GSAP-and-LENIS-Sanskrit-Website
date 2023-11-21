@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/locomotive-scroll.css">
+    <link rel="stylesheet" href="./lenis/lenis.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>SanskritEra.</title>
 </head>
 
 <body data-scroll-container>
@@ -15,19 +15,20 @@
             <h1>SanskritEra.</h1>
             <div id="menu">
                 <svg width="100" height="20">
-                    <circle cx="10" cy="10" r="10" fill="burlywood"></circle>
-                    <circle cx="40" cy="10" r="10" fill="burlywood"></circle>
-                    <circle cx="70" cy="10" r="10" fill="burlywood"></circle>
+                    <circle class="dot1" cx="10" cy="10" r="10" fill="burlywood"></circle>
+                    <circle class="dot2" cx="40" cy="10" r="10" fill="burlywood"></circle>
+                    <circle class="dot3" cx="70" cy="10" r="10" fill="burlywood"></circle>
                 </svg>
             </div>
         </div>
         <nav id="navbar">
             <ul class="list">
-                <li class="items"><a href="#nom">Nomenclature</a></li>
-                <li class="items"><a href="#history">History</a></li>
-                <li class="items"><a href="#influence">Influence</a></li>
-                <li class="items"><a href="#writing">Writing</a></li>
-                <li class="items"><a href="#mod-era">Modern Era</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#home')" href="#home">Home</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#nom')" href="#nom">Nomenclature</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#history')" href="#history">History</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#influence')" href="#influence">Influence</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#writing')" href="#writing">Writing</a></li>
+                <li class="items"><a onclick="lenis.scrollTo('#mod-era')" href="#mod-era">Modern Era</a></li>
             </ul>
             <div class="svg-container">
                 <svg width="150">
@@ -36,16 +37,16 @@
                 </svg>
             </div>
         </nav>
-        <div class="container" data-scroll-container>
+        <div class="container">
             <section id="home">
-                <h1>SANSKRIT</h1>
+                <h1><span>S</span><span>A</span><span>N</span><span style="color: rgb(88, 26, 26);">S</span><span>K</span><span>R</span><span>I</span><span>T</span></h1>
                 <div class="text">
-                    <p>Sanskrit is a classical language within the Indo-Aryan branch of Indo-European languages.
+                    <p class="f-para">Sanskrit is a classical language within the Indo-Aryan branch of Indo-European languages.
                         Emerging in South Asia after the Bronze Age, it played a pivotal role as the sacred language of
                         Hinduism, classical Hindu philosophy, and historical texts of Buddhism and Jainism. Serving as a
                         link language in ancient South Asia, it spread with Hindu and Buddhist cultures to Southeast
                         Asia, East Asia, and Central Asia, influencing formal vocabularies.</p>
-                    <p data-scroll data-scroll-speed="1">Sanskrit encompasses various Old Indo-Aryan language varieties,
+                    <p class="s-para">Sanskrit encompasses various Old Indo-Aryan language varieties,
                         with Vedic Sanskrit being the
                         oldest found in the Rigveda (1500 BCE - 1200 BCE). Classical Sanskrit, a refined form codified
                         by Pāṇini in the 1st millennium BCE, marked a significant development. Notable works like the
@@ -56,20 +57,27 @@
             </section>
             <section id="nom">
                 <div class="head">
-                    <h1 class="title" data-scroll data-scroll-speed="-2">Nomenclature</h1>
+                    <h1 class="title">Nomenclature</h1>
+                    <h1 class="title">Nomenclature</h1>
+                    <h1 class="title">Nomenclature</h1>
+                </div>
+                <div class="head">
+                    <h1 class="title">Nomenclature</h1>
+                    <h1 class="title">Nomenclature</h1>
+                    <h1 class="title">Nomenclature</h1>
                 </div>
                 <div class="content">
-                    <p data-scroll data-scroll-speed="2"><span>1.</span> The term "Sanskrit" is derived from the
+                    <p><span>1.</span> The term "Sanskrit" is derived from the
                         compound word sáṃskṛta-, where sáṃ means
                         'together, good, well, perfected,' and kṛta- means 'made, formed, work.' This conveys the idea
                         of a work that is "well prepared, pure, perfect, and sacred," emphasizing tonal qualities over
                         semantics.</p>
-                    <p data-scroll data-scroll-speed="3"><span>2.</span>
+                    <p><span>2.</span>
                         In ancient India, sound and oral transmission held immense value, leading sages to refine the
                         alphabet, word structure, and grammar into what they called Sanskrit—a "sublime musical mold."
                         The late Vedic period witnessed a fascination with resonating sound and its musical foundations,
                         permeating linguistic, philosophical, and religious literature.</p>
-                    <p data-scroll data-scroll-speed="4"><span>3.</span> Sanskrit competed with vernacular Prakritic
+                    <p><span>3.</span> Sanskrit competed with vernacular Prakritic
                         languages, termed prākṛta-, meaning
                         "original, natural, normal, artless." Patañjali recognized Prakrit as the instinctive first
                         language, acknowledging its imperfections. Sanskrit, seen as purifying, resolved linguistic
@@ -81,14 +89,14 @@
             </section>
             <section id="history">
                 <div class="head">
-                    <h1 class="title" data-scroll data-scroll-speed="1">History</h1>
+                    <h1 class="title">History</h1>
                 </div>
                 <div class="text">
-                    <p><span>S</span>anskrit, a member of the Indo-European family of languages, is among the
+                    <p class="ani"><span>S</span>anskrit, a member of the Indo-European family of languages, is among the
                         earliest ancient documented languages originating from the common root language known as
                         Proto-Indo-European. The three earliest documented languages from this lineage include:
                     </p><br>
-                    <ol class="list">
+                    <ol class="list ani">
                         <li>1. Vedic Sanskrit (c. 1500-500 BCE):
                             - The oldest form, found in the Rigveda, composed between 1500 BCE and 1200 BCE.
                         </li>
@@ -99,9 +107,9 @@
                     </ol>
                 </div>
                 <div class="text">
-                    <p><span>O</span>ther Indo-European languages distantly related to Sanskrit include:</p>
+                    <p class="ani"><span>O</span>ther Indo-European languages distantly related to Sanskrit include:</p>
                     <br>
-                    <ol class="list">
+                    <ol class="list ani">
                         <li>-> Archaic and Classical Latin (c. 600 BCE-100 CE, Italic languages).</li>
                         <li>-> Gothic (archaic Germanic language, c. 350 CE).</li>
                         <li>-> Old Norse (c. 200 CE and after).</li>
@@ -109,14 +117,14 @@
                     </ol>
                 </div>
                 <div class="text">
-                    <p><span>T</span>he closest ancient relatives of Vedic Sanskrit within the Indo-European
+                    <p class="ani"><span>T</span>he closest ancient relatives of Vedic Sanskrit within the Indo-European
                         languages are the Nuristani languages in the Hindu Kush region and the Iranian languages
                         Avestan and Old Persian. Sanskrit belongs to the satem group of the Indo-European
                         languages.</p>
                     <br>
                 </div>
                 <div class="text">
-                    <p><span>D</span>uring the colonial era, scholars acquainted with Latin and Greek noticed
+                    <p class="ani"><span>D</span>uring the colonial era, scholars acquainted with Latin and Greek noticed
                         striking resemblances between Sanskrit and classical European languages, both in
                         vocabulary and grammar. This linguistic connection further reinforces the shared
                         historical roots of these languages.</p>
@@ -124,7 +132,8 @@
             </section>
             <section id="influence">
                 <div class="head">
-                    <h1 data-scroll data-scroll-speed="-2">Influence</h1>
+                    <h1>Influence</h1>
+                    <h1>Influence</h1>
                 </div>
                 <div class="para">
                     <p>The historical presence of the Sanskrit language extends far beyond South Asia. Inscriptions and
@@ -152,7 +161,7 @@
             </section>
             <section id="writing">
                 <div class="head">
-                    <h1 data-scroll data-scroll-speed="-2">Writing</h1>
+                    <h1>Writing</h1>
                 </div>
                 <div class="para">
                     <p>The early history of writing Sanskrit and other languages in ancient India poses challenges,
@@ -231,11 +240,22 @@
     <footer>
         <p>Contact :- saswatlibu@gmail.com</p>
     </footer>
-    <script src="./lib/locomotive-scroll.js"></script>
+    <div class="cursor">
+        <img src="./assets/cursor.svg" alt="" width="50">
+    </div>
+    <script src="./js/cursor.js"></script>
     <script src="./lib/gsap.min.js"></script>
     <script src="./lib/ScrollTrigger.min.js"></script>
-    <script src="./js/scroll.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="./lenis/lenis.js"></script>
+    <script src="./anim/nav.js"></script>
+    <script src="./anim/home.js"></script>
+    <script src="./anim/nom.js"></script>
+    <script src="./anim/history.js"></script>
+    <script src="./anim/influence.js"></script>
+    <script src="./anim/writing.js"></script>
+    <script src="./anim/mod-era.js"></script>
 </body>
 
 </html>
