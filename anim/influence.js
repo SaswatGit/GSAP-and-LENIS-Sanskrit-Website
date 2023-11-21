@@ -7,17 +7,12 @@ gsap.to("#influence .head h1:nth-child(1)", {y: "700%", scrollTrigger: {
 }});
 gsap.to("#influence .head h1:nth-child(2)", {y: "-700%", scrollTrigger: {
     trigger: "#influence",
-    start: "-50% 100%",
+    start: "top center",
     scrub: 0.5,
 }});
-gsap.from("#influence .para", {x: "50%", duration: 0.5, stagger: 0.5, scrollTrigger: {
+gsap.from("#influence .ani", {y: "50%", stagger: 0.5, scrollTrigger: {
     trigger: "#influence",
-    start: "-50% 100%",
-    scrub: 0.2,
-}});
-gsap.from("#influence .points", {x: "-40%", duration: 0.5, stagger: 0.5, scrollTrigger: {
-    trigger: "#influence",
-    start: "-50% bottom",
+    start: "30% 100%",
     scrub: 0.2,
 }});
 
