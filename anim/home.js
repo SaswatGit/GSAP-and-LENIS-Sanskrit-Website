@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
 const tl = gsap.timeline();
 
 tl.from("#home h1 span", {opacity: 0, duration: 0.5, stagger: 0.1});
