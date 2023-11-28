@@ -37,6 +37,8 @@ body{
 .cursor img{
     transform: rotateZ(-30deg);
 }
+
+
 :root{
     --font1: 'Rowdies', sans-serif;
     --font2: 'Josefin Sans', sans-serif;
@@ -58,7 +60,7 @@ body{
     font-family: var(--font1);
     padding: 1rem;
     z-index: 2;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 #menu{
     cursor: pointer;
@@ -103,6 +105,7 @@ body{
     align-items: center;
     padding: 2rem 0;
     background-color: rgb(0, 0, 0, 0.5);
+    background-size: cover;
     overflow: hidden;
 }
 #home h1{
@@ -247,7 +250,6 @@ body{
 
 #influence{
     overflow: hidden;
-    background-color: burlywood;
     color: rgb(79, 14, 14);
     font-family: var(--font2);
     padding: 2rem 0;
@@ -256,6 +258,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all 1s;
 }
 #influence .head{
     width: 100%;
@@ -376,8 +379,9 @@ body{
 #mod-era{
     overflow: hidden;
     font-family: var(--font2);
-    background-color: rgb(79, 14, 14);
     color: burlywood;
+    transition: all 1s;
+    background-color: rgb(79, 14, 14);
 }
 
 #mod-era .head{

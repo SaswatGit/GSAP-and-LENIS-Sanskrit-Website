@@ -1,5 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.set("#influence", {backgroundColor: "rgb(79, 14, 14)" });
+gsap.to("#influence", {backgroundColor: "burlywood",scrollTrigger: {
+    trigger: "#influence",
+    start: "top 30%",
+    scrub: 0.5,
+}});
 gsap.to("#influence .head h1:nth-child(1)", {y: "700%", scrollTrigger: {
     trigger: "#influence",
     start: "top 100%",
